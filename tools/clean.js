@@ -7,7 +7,7 @@ const {readFile} = require("fs").promises;
 const {join} = require("path");
 const {writeFile, exit} = require("./utils");
 
-const source = join(__dirname, "..", "github-dark.css");
+const source = join(__dirname, "..", "bitbucket-dark.css");
 
 const replacements = [
   {from: /\{\/\*!/g, to: "{\n /*!"},

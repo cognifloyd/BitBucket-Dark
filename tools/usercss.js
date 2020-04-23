@@ -8,8 +8,8 @@ const {writeFile, exit} = require("./utils");
 const globSync = (pattern) => fastGlob.sync(pattern, {cwd: __dirname, absolute: true});
 
 const files = {
-  source: globSync("../github-dark.css")[0],
-  usercss: globSync("../github-dark.user.css")[0],
+  source: globSync("../bitbucket-dark.css")[0],
+  usercss: globSync("../bitbucket-dark.user.css")[0],
   template: globSync("./usercss-template.css")[0],
 };
 
@@ -118,7 +118,7 @@ async function main() {
   css = replaceVars(`${themes}${css}`);
   await writeFile(files.usercss, css);
 
-  console.info("\u001B[32m%s\u001B[0m", "GitHub Dark usercss build complete");
+  console.info("\u001B[32m%s\u001B[0m", "BitBucket Dark usercss build complete");
 }
 
 main().then(exit).catch(exit);

@@ -428,7 +428,7 @@ const ignoreSelectors = [
 ];
 
 const replaceRe = /.*begin remap-css[\s\S]+end remap-css.*/gm;
-const cssFile = join(__dirname, "..", "github-dark.css");
+const cssFile = join(__dirname, "..", "bitbucket-dark.css");
 
 const remapOpts = {
   ignoreSelectors,
