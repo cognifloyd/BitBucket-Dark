@@ -213,10 +213,10 @@
   } EOT;
 }
 ==/UserStyle== */
-/*! Github Dark v2.0.55 (2020-04-23) */
+/*! Github Dark v0.1.0 (2020-04-23) */
 /*! Repository: https://github.com/StylishThemes/GitHub-Dark    */
 /*! License:    https://creativecommons.org/licenses/by-sa/4.0/ */
-@-moz-document regexp("^https?://((education|gist|graphql|guides|help|lab|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
+@-moz-document regexp("^https?://bitbucket\\.org/((?!blog/product).)*$") {
   :root {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
@@ -252,12 +252,10 @@
   }
   /* begin remap-css rules */
   /* remap-css rule for "background: #fff" */
-  #cboxContent, #cboxOverlay,
-  .block-editor-block-list__layout .reusable-block-indicator, .cboxIframe,
   .component--try-product-card .component--try-product-card__back,
   .component--try-product-card .component--try-product-card__front,
   .container--downloads .column--post-download__card,
-  .container--downloads .download-column__card, .cta-wrap,
+  .container--downloads .download-column__card,
   .global-nav .component--search.active .component--search__form,
   .global-nav__dropdown-backdrop,
   .imkt-all-products-calculator .step3-view .tooltip div,
@@ -270,7 +268,7 @@
     background: #181818;
   }
   /* remap-css rule for "background-color: #fff" */
-  .card, .component--customer-card, .component--customer-quote .block-wrapper,
+  .component--customer-card, .component--customer-quote .block-wrapper,
   .component--customer-quote .component--customer-quote__image .component--video-embed .vid-thumb .component--try-product-card .component--try-product-card__flip-to-back-text:focus .div-video,
   .component--customer-quote .component--customer-quote__image .component--video-embed .vid-thumb .component--try-product-card .component--try-product-card__flip-to-back-text:focus img,
   .component--customer-quote .component--customer-quote__image .component--video-embed .vid-thumb .component--try-product-card .component--try-product-card__flip-to-front-text:focus .div-video,
@@ -304,8 +302,7 @@
   .component--video-embed .vid-thumb:hover .div-video,
   .component--video-embed .vid-thumb:hover img,
   .curve-container .container-fixed.curve-three,
-  .curve-container .container-fluid.curve-three, .dropdown-menu, .form-control,
-  .form-control:focus, .img-thumbnail,
+  .curve-container .container-fluid.curve-three,
   .imkt-all-products-calculator input[type=number],
   .imkt-feature-comparison-table-body-row, .imkt-navbar__dropdown-links,
   .imkt-navbar__dropdown-links ul::before, .imkt-navbar__main-section,
@@ -316,11 +313,9 @@
   .imkt-tab-container .imkt-tab .active:hover,
   .imkt-tab-container .imkt-tab .active:visited,
   .imkt-tab-container .mobile-nav-container .mobile-tab-navigation .tab-dropdown-options,
-  .list-group-item, .list-group-item.disabled, .list-group-item:disabled,
-  .modal-content, .n0, .page-item.disabled .page-link, .page-link,
-  .related-posts .card, .select2-container .select2-choice,
-  .select2-container-multi .select2-choices, .select2-drop-mask, .site-header,
-  .table .table, body, body#wac .global-nav--wac__background,
+  .n0, .select2-container .select2-choice,
+  .select2-container-multi .select2-choices, .select2-drop-mask,
+  body#wac .global-nav--wac__background,
   body.mobile-menu--open .global-nav--wac__background,
   body.overlay--open .global-nav--wac__background,
   body.search--open .global-nav--wac__background,
@@ -328,11 +323,7 @@
   section.adg .grid.edge-to-edge > .column.white {
     background-color: #181818;
   }
-  select.form-control:focus::-ms-value {
-    background-color: #181818;
-  }
   /* remap-css rule for "background-color: #eee" */
-  .has-very-light-gray-background-color.has-very-light-gray-background-color,
   .select2-dropdown-open .select2-choice {
     background-color: #242424;
   }
@@ -357,13 +348,8 @@
   .select2-container.select2-container-disabled .select2-choice .select2-arrow {
     background-color: #242424;
   }
-  /* remap-css rule for "border-color: transparent" */
-  .btn-link.focus, .btn-link:focus, .btn-link:hover,
-  .wp-block-table.is-style-stripes td {
-    border-color: transparent;
-  }
   /* remap-css rule for "border: solid transparent" */
-  .form-control-plaintext, .imkt-navbar__dropdown-links ul::after,
+  .imkt-navbar__dropdown-links ul::after,
   .imkt-navbar__dropdown-links ul::before {
     border-color: transparent;
   }
@@ -372,7 +358,7 @@
     border-bottom-color: transparent;
   }
   /* remap-css rule for "border: 1px solid transparent" */
-  .btn, .global-nav--wac__button--secondary {
+  .global-nav--wac__button--secondary {
     border-color: transparent;
   }
   /* remap-css rule for "border-bottom: 3px solid transparent" */
@@ -391,18 +377,6 @@
   .global-nav__link .has-dropdown::before {
     border-right-color: transparent;
   }
-  /* remap-css rule for "border: 1px solid rgba(0,0,0,.125)" */
-  .card, .list-group-item {
-    border-color: rgba(200, 200, 200, .125);
-  }
-  /* remap-css rule for "border-top: 1px solid rgba(0,0,0,.125)" */
-  .card-footer {
-    border-top-color: rgba(200, 200, 200, .125);
-  }
-  /* remap-css rule for "border-bottom: 1px solid rgba(0,0,0,.125)" */
-  .card-header {
-    border-bottom-color: rgba(200, 200, 200, .125);
-  }
   /* remap-css rule for "border: 1px solid #ddd" */
   .select2-container-multi.select2-container-disabled .select2-choices,
   .select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice,
@@ -414,16 +388,12 @@
     border-bottom-color: #343434;
   }
   /* remap-css rule for "border-color: #fff" */
-  .btn-white, .button--four.button--secondary,
-  .button--four.button--secondary:active, .button--four.button--secondary:hover,
+  .button--four.button--secondary, .button--four.button--secondary:active,
+  .button--four.button--secondary:hover,
   .imkt-pup-calculator.domino .button--four.imkt-pup-calculator__calculate,
   .imkt-pup-calculator.domino .button--four.imkt-pup-calculator__calculate:active,
   .imkt-pup-calculator.domino .button--four.imkt-pup-calculator__calculate:hover {
     border-color: #181818;
-  }
-  /* remap-css rule for "border-color: #fff !important" */
-  .border-white {
-    border-color: #181818 !important;
   }
   /* remap-css rule for "border-top-color: #fff" */
   .imkt-all-products-calculator .step3-view .tooltip div::after {
@@ -436,10 +406,6 @@
   /* remap-css rule for "border: 1px solid #fff" */
   .border-n0 {
     border-color: #181818;
-  }
-  /* remap-css rule for "border-bottom: 1px solid #fff" */
-  .syntax-highlighter-block h4 {
-    border-bottom-color: #181818;
   }
   /* remap-css rule for "border-bottom: 3px solid #fff" */
   header.hipchat nav.nav--sliding-subnav li a:hover {
@@ -454,9 +420,7 @@
     fill: currentcolor;
   }
   /* remap-css rule for "color: #000" */
-  .close, .close:not(:disabled):not(.disabled):focus,
-  .close:not(:disabled):not(.disabled):hover, .select2-drop,
-  .select2-results .select2-highlighted ul {
+  .select2-drop, .select2-results .select2-highlighted ul {
     color: #bebebe;
   }
   /* remap-css rule for "color: #333" */
@@ -469,97 +433,26 @@
   .select2-results .select2-disabled.select2-highlighted {
     color: #949494;
   }
-  /* remap-css rule for "text-shadow: 0 1px 0 #fff" */
-  .close {
-    text-shadow: none;
-  }
   /* remap-css rule for "color: inherit" */
-  .h1, .h2, .h3, .h4, .h5, .h6,
   .imkt-navbar .imkt-navbar__collapsed-link-list-link--dropdown-trigger::after,
-  .table-info-disclamer, .wp-block-button__link, .wp-block-button__link:active,
-  .wp-block-button__link:focus, .wp-block-button__link:hover,
-  .wp-block-button__link:visited, .wp-block-cover .wp-block-subhead,
-  .wp-block-cover h1, .wp-block-cover h2, .wp-block-cover h3, .wp-block-cover h4,
-  .wp-block-cover h5, .wp-block-cover h6, .wp-block-cover p,
-  .wp-block-cover-image .wp-block-subhead, .wp-block-cover-image h1,
-  .wp-block-cover-image h2, .wp-block-cover-image h3, .wp-block-cover-image h4,
-  .wp-block-cover-image h5, .wp-block-cover-image h6, .wp-block-cover-image p,
-  .wp-block-pullquote .has-text-color a, .wp-block-pullquote cite, a > code,
-  a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus,
-  a:not([href]):not([tabindex]):hover, div.code-toolbar > .toolbar a:focus,
-  div.code-toolbar > .toolbar a:hover, div.code-toolbar > .toolbar button,
-  div.code-toolbar > .toolbar button:focus,
-  div.code-toolbar > .toolbar button:hover,
-  div.code-toolbar > .toolbar span:focus, div.code-toolbar > .toolbar span:hover,
-  h1, h2, h3, h4, h5, h6, legend, p.has-text-color a, pre code,
-  section.adg .grid.edge-to-edge > a.column {
+  .table-info-disclamer, section.adg .grid.edge-to-edge > a.column {
     color: inherit;
   }
   /* remap-css rule for "box-shadow: none" */
-  .btn-link.focus, .btn-link:focus,
-  .btn-secondary:not(:disabled):not(.disabled).active:focus,
-  .btn-secondary:not(:disabled):not(.disabled):active:focus,
   .component--try-product-card .imkt-pup-calculator .imkt-pup-calculator__model-selector .switch-toggle .component--try-product-card__flip-to-back-text,
   .component--try-product-card .imkt-pup-calculator .imkt-pup-calculator__model-selector .switch-toggle .component--try-product-card__flip-to-front-text,
   .imkt-pup-calculator .imkt-pup-calculator__model-selector .switch-toggle .component--try-product-card .component--try-product-card__flip-to-back-text,
   .imkt-pup-calculator .imkt-pup-calculator__model-selector .switch-toggle .component--try-product-card .component--try-product-card__flip-to-front-text,
   .imkt-pup-calculator .imkt-pup-calculator__model-selector .switch-toggle a,
-  .search-field,
   .select2-container-multi .select2-choices .select2-search-field input,
-  .select2-search input, .show > .btn-secondary.dropdown-toggle:focus,
-  .wp-block-button__link, .wp-block-file a.wp-block-file__button:active,
-  .wp-block-file a.wp-block-file__button:focus,
-  .wp-block-file a.wp-block-file__button:hover,
-  .wp-block-file a.wp-block-file__button:visited,
-  body.adg header.header__branded-domains {
+  .select2-search input, body.adg header.header__branded-domains {
     box-shadow: none;
   }
-  /* remap-css rule for "box-shadow: none !important" */
-  .shadow-none, img.emoji, img.wp-smiley {
-    box-shadow: none !important;
-  }
   /* remap-css rule for "background-color: transparent" */
-  .btn-blue.btn-secondary, .btn-link, .btn-link:hover, .btn-outline-danger,
-  .btn-outline-danger.disabled, .btn-outline-danger:disabled, .btn-outline-dark,
-  .btn-outline-dark.disabled, .btn-outline-dark:disabled, .btn-outline-info,
-  .btn-outline-info.disabled, .btn-outline-info:disabled, .btn-outline-light,
-  .btn-outline-light.disabled, .btn-outline-light:disabled, .btn-outline-primary,
-  .btn-outline-primary.disabled, .btn-outline-primary:disabled,
-  .btn-outline-secondary, .btn-outline-secondary.disabled,
-  .btn-outline-secondary:disabled, .btn-outline-success,
-  .btn-outline-success.disabled, .btn-outline-success:disabled,
-  .btn-outline-warning, .btn-outline-warning.disabled,
-  .btn-outline-warning:disabled, .btn-secondary, .btn-yellow.btn-secondary,
-  .dropdown-item, .dropdown-item.disabled, .dropdown-item:disabled,
-  .form-control-plaintext,
-  .imkt-navbar__collapsed .imkt-navbar__title-wrapper .aui-icon,
-  .is-style-outline .wp-block-button__link, .search-submit, .text-hide,
-  .topics-list .cat-item, .topics-list .cat-item:disabled,
-  .topics-list .disabled.cat-item, .wp-block-table.is-style-stripes, a,
-  button.close {
+  .imkt-navbar__collapsed .imkt-navbar__title-wrapper .aui-icon {
     background-color: transparent;
-  }
-  .form-control::-ms-expand {
-    background-color: transparent;
-  }
-  /* remap-css rule for "background-color: transparent !important" */
-  .bg-transparent {
-    background-color: transparent !important;
-  }
-  /* remap-css rule for "background: none" */
-  .wp-block-pullquote:not(.is-style-solid-color),
-  .wp-block-separator.is-style-dots, code[class*="language-"],
-  div.code-toolbar > .toolbar button, pre[class*="language-"] {
-    background: none;
-  }
-  /* remap-css rule for "background: none !important" */
-  img.emoji, img.wp-smiley {
-    background: none !important;
   }
   /* remap-css rule for "background-image: none" */
-  .btn-outline-danger, .btn-outline-dark, .btn-outline-info, .btn-outline-light,
-  .btn-outline-primary, .btn-outline-secondary, .btn-outline-success,
-  .btn-outline-warning,
   .select2-container-multi.select2-container-disabled .select2-choices,
   .select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice,
   .select2-container.select2-container-disabled .select2-choice,

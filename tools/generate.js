@@ -354,8 +354,6 @@ const sources = [
   // maybe pick a random repo to go through?
   {url: "https://bitbucket.org"},
   {url: "https://bitbucket.org/account/"},
-  {url: "https://bitbucket.org/blog/"},
-  {url: "https://bitbucket.org/product/"}
 ];
 
 const ignoreSelectors = [
