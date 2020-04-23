@@ -216,7 +216,7 @@
 /*! Github Dark v0.1.0 (2020-04-23) */
 /*! Repository: https://github.com/StylishThemes/GitHub-Dark    */
 /*! License:    https://creativecommons.org/licenses/by-sa/4.0/ */
-@-moz-document regexp("^https?://bitbucket\\.org/((?!blog/product).)*$") {
+@-moz-document regexp("^https?://bitbucket\\.org/((?!blog|product).)*$") {
   :root {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
