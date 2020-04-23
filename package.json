@@ -1,10 +1,10 @@
 {
-  "name": "github-dark",
-  "version": "2.0.55",
-  "description": "Dark GitHub style",
+  "name": "bitbucket-dark",
+  "version": "0.1.0",
+  "description": "Dark BitBucket style",
   "license": "CC-BY-SA-4.0",
-  "repository": "StylishThemes/GitHub-Dark",
-  "homepage": "https://github.com/StylishThemes/GitHub-Dark",
+  "repository": "cognifloyd/BitBucket-Dark",
+  "homepage": "https://github.com/cognifloyd/BitBucket-Dark",
   "engines": {
     "node": ">=12"
   },
